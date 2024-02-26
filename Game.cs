@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -11,9 +12,9 @@ namespace prog201_cardgames
         public Deck deck;
         public List<Card> playerHand;
 
-        public Game()
+        public Game(string suit1, string suit2)
         {
-            deck = new Deck();
+            deck = new Deck(suit1, suit2);
             playerHand = new List<Card>();
         }
 
@@ -25,9 +26,10 @@ namespace prog201_cardgames
             Console.WriteLine("1. Show Full Deck");
             Console.WriteLine("2. Draw a Card");
             Console.WriteLine("3. Play High Card Low Card");
-            Console.WriteLine("4. Exit");
+            Console.WriteLine("4. Play Same or Different");
+            Console.WriteLine("5. Exit");
 
-            int choice = GetChoice(1, 4);
+            int choice = GetChoice(1, 5);
             switch (choice)
             {
                 case 1:
@@ -40,6 +42,9 @@ namespace prog201_cardgames
                     PlayHighLow();
                     break;
                 case 4:
+                    PlaySameOrDifferent();
+                    break;
+                case 5:
                     Exit();
                     break;
             }
@@ -218,6 +223,84 @@ namespace prog201_cardgames
             }
         }
 
+        public void PlaySameOrDifferent()
+        {
+            Console.Clear();
+            Console.WriteLine("Choose the two suits to play with:");
+            Console.WriteLine("1. Fey");
+            Console.WriteLine("2. Fiend");
+            Console.WriteLine("3. Beast");
+            Console.WriteLine("4. Celestial");
+
+            Console.Write("Choose the first suit: ");
+            int suitChoice1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Choose the second suit: ");
+            int suitChoice2 = Convert.ToInt32(Console.ReadLine());
+                if (suitChoice1 == suitChoice2)
+                {
+                    Console.WriteLine("You cannot choose the same suit twice.");
+                    Console.WriteLine("Press ENTER to try again.");
+                    Console.ReadKey();
+                    PlaySameOrDifferent();
+                }
+
+            //get the names of the chosen suits
+            string[] suits = { "", "Fey", "Fiend", "Beast", "Celestial" };
+            string Suit1 = suits[suitChoice1];
+            string Suit2 = suits[suitChoice2];
+
+            //create a new deck containing only the chosen suits
+            deck = new Deck(Suit1, Suit2);
+            deck.Shuffle();
+
+            //draw a card for the player
+            Console.Clear();
+            Console.WriteLine("Press ENTER to draw a card.");
+            Console.ReadKey();
+            Card playerCard = deck.DrawCard();
+            Console.WriteLine("Your card:");
+            Console.WriteLine(playerCard.Name);
+            Console.WriteLine(playerCard.Art);
+
+            //prompt the player to guess
+            Console.WriteLine("\nIs the computer's card of the SAME or DIFFERENT suit than yours?");
+            Console.WriteLine("[1] SAME");
+            Console.WriteLine("[2] DIFFERENT");
+            int guess = GetChoice(1, 2);
+
+            //draw a card for the computer
+            Card computerCard = deck.DrawCard();
+            Console.WriteLine("\nComputer's card:");
+            Console.WriteLine(computerCard.Name);
+            Console.WriteLine(computerCard.Art);
+
+            //evaluate the result
+            bool isSame = playerCard.Suit == computerCard.Suit;
+            bool guessCorrect = (guess == 1 && isSame) || (guess == 2 && !isSame);
+
+            if (guessCorrect)
+                Console.WriteLine("Congratulations! You win!");
+            else
+                Console.WriteLine("Sorry, you lose!");
+
+            Console.WriteLine("\nPlay again?" +
+                "\n[1] YES" +
+                "\n[2] NO");
+            int response = Convert.ToInt32(Console.ReadLine());
+            if (response == 1)
+            {
+                playerHand.Clear();
+                deck.ReturnCardsToDeck();
+                PlaySameOrDifferent();
+            }
+            else
+            {
+                ShowMainMenu();
+            }
+
+        }
+
         //method for debugging high-low game
         //remove after debugging
         public int CompareCards(Card playerCard, Card computerCard)
@@ -235,9 +318,7 @@ namespace prog201_cardgames
 
         public void Exit()
         {
-            Console.WriteLine("Exiting game. Returning all cards to the deck.");
-            playerHand.Clear();
-            deck.ReturnCardsToDeck();
+            Environment.Exit(0);
         }
     }
 }

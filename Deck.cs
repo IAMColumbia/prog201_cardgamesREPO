@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -14,13 +15,14 @@ namespace prog201_cardgames
 
         public List<Card> Cards { get { return cards; } }
 
-        public Deck()
+        public Deck(string suit1, string suit2)
         {
             cards = new List<Card>();
             drawnCards = new List<Card>();
             random = new Random();
 
             InitializeDeck();
+            InitializeHalfDeck(suit1, suit2);
         }
 
         private void InitializeDeck()
@@ -33,6 +35,34 @@ namespace prog201_cardgames
             string[] faces = { "Apprentice", "Anointed", "Ascended", "Avatar" };
 
             foreach (string suit in suits)
+            {
+                foreach (string value in values)
+                {
+                    string name = $"{value} of {suit}";
+                    string art = GetCardArt(value, suit, "");
+                    cards.Add(new Card(name, art));
+                }
+
+                foreach (string face in faces)
+                {
+                    string faceName = $"{face} of {suit}";
+                    string faceArt = GetCardArt("", suit, face);
+                    cards.Add(new Card(faceName, faceArt));
+                }
+            }
+        }
+
+        private void InitializeHalfDeck(string suit1, string suit2)
+        {
+            cards.Clear();
+            drawnCards.Clear();
+
+            //suit1 = Game.PlaySameOrDifferent.suitChoice1;
+            //suit2 = Game.PlaySameOrDifferent.suitChoice2;
+            string[] values = { "2 ", "3 ", "4 ", "5 ", "6 ", "7 ", "8 ", "9 ", "10" };
+            string[] faces = { "Apprentice", "Anointed", "Ascended", "Avatar" };
+
+            foreach (string suit in new List<string> { suit1, suit2 })
             {
                 foreach (string value in values)
                 {

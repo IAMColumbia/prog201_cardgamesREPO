@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\olive\\Documents\\Columbia\\Prog201\\prog201_cardgames\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{70526581-23F8-4AE7-A27B-706C42855DFB}|prog201_cardgames.csproj|C:\\Users\\olive\\Documents\\Columbia\\Prog201\\prog201_cardgames\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70526581-23F8-4AE7-A27B-706C42855DFB}|prog201_cardgames.csproj|solutionrelative:card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{70526581-23F8-4AE7-A27B-706C42855DFB}|prog201_cardgames.csproj|c:\\users\\olive\\documents\\columbia\\prog201\\prog201_cardgames\\classdiagram1.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|",
+      "RelativeMoniker": "D:0:0:{70526581-23F8-4AE7-A27B-706C42855DFB}|prog201_cardgames.csproj|solutionrelative:classdiagram1.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70526581-23F8-4AE7-A27B-706C42855DFB}|prog201_cardgames.csproj|c:\\users\\olive\\documents\\columbia\\prog201\\prog201_cardgames\\deck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70526581-23F8-4AE7-A27B-706C42855DFB}|prog201_cardgames.csproj|solutionrelative:deck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{70526581-23F8-4AE7-A27B-706C42855DFB}|prog201_cardgames.csproj|C:\\Users\\olive\\Documents\\Columbia\\Prog201\\prog201_cardgames\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70526581-23F8-4AE7-A27B-706C42855DFB}|prog201_cardgames.csproj|solutionrelative:game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{70526581-23F8-4AE7-A27B-706C42855DFB}|prog201_cardgames.csproj|C:\\Users\\olive\\Documents\\Columbia\\Prog201\\prog201_cardgames\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{70526581-23F8-4AE7-A27B-706C42855DFB}|prog201_cardgames.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70526581-23F8-4AE7-A27B-706C42855DFB}|prog201_cardgames.csproj|C:\\Users\\olive\\Documents\\Columbia\\Prog201\\prog201_cardgames\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70526581-23F8-4AE7-A27B-706C42855DFB}|prog201_cardgames.csproj|solutionrelative:game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{70526581-23F8-4AE7-A27B-706C42855DFB}|prog201_cardgames.csproj|C:\\Users\\olive\\Documents\\Columbia\\Prog201\\prog201_cardgames\\deck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70526581-23F8-4AE7-A27B-706C42855DFB}|prog201_cardgames.csproj|solutionrelative:deck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70526581-23F8-4AE7-A27B-706C42855DFB}|prog201_cardgames.csproj|c:\\users\\olive\\documents\\columbia\\prog201\\prog201_cardgames\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70526581-23F8-4AE7-A27B-706C42855DFB}|prog201_cardgames.csproj|solutionrelative:card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,8 +30,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ClassDiagram1.cd",
+              "DocumentMoniker": "C:\\Users\\olive\\Documents\\Columbia\\Prog201\\prog201_cardgames\\ClassDiagram1.cd",
+              "RelativeDocumentMoniker": "ClassDiagram1.cd",
+              "ToolTip": "C:\\Users\\olive\\Documents\\Columbia\\Prog201\\prog201_cardgames\\ClassDiagram1.cd",
+              "RelativeToolTip": "ClassDiagram1.cd",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000463|",
+              "WhenOpened": "2024-02-26T06:46:25.039Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -36,7 +53,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\olive\\Documents\\Columbia\\Prog201\\prog201_cardgames\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-25T23:07:41.091Z",
               "IsPinned": true,
@@ -44,13 +61,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Game.cs",
               "DocumentMoniker": "C:\\Users\\olive\\Documents\\Columbia\\Prog201\\prog201_cardgames\\Game.cs",
               "RelativeDocumentMoniker": "Game.cs",
               "ToolTip": "C:\\Users\\olive\\Documents\\Columbia\\Prog201\\prog201_cardgames\\Game.cs",
               "RelativeToolTip": "Game.cs",
-              "ViewState": "AQIAAD8AAAAAAAAAAAASwKEAAAAgAAAA",
+              "ViewState": "AQIAAPUAAAAAAAAAAAAYwD8BAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-25T23:08:28.835Z",
               "IsPinned": true,
@@ -58,13 +75,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Deck.cs",
               "DocumentMoniker": "C:\\Users\\olive\\Documents\\Columbia\\Prog201\\prog201_cardgames\\Deck.cs",
               "RelativeDocumentMoniker": "Deck.cs",
               "ToolTip": "C:\\Users\\olive\\Documents\\Columbia\\Prog201\\prog201_cardgames\\Deck.cs",
               "RelativeToolTip": "Deck.cs",
-              "ViewState": "AQIAAGsAAAAAAAAAAAAIwBQAAAAiAAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwBEAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-25T23:08:10.299Z",
               "IsPinned": true,
@@ -72,13 +89,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Card.cs",
               "DocumentMoniker": "C:\\Users\\olive\\Documents\\Columbia\\Prog201\\prog201_cardgames\\Card.cs",
               "RelativeDocumentMoniker": "Card.cs",
               "ToolTip": "C:\\Users\\olive\\Documents\\Columbia\\Prog201\\prog201_cardgames\\Card.cs",
               "RelativeToolTip": "Card.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAzwB4AAABEAAAA",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAiwDEAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-25T23:07:59.06Z",
               "IsPinned": true,
