@@ -1,0 +1,100 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\olive\\Documents\\Columbia\\Prog201\\prog201_cardgames\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{70526581-23F8-4AE7-A27B-706C42855DFB}|prog201_cardgames.csproj|C:\\Users\\olive\\Documents\\Columbia\\Prog201\\prog201_cardgames\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70526581-23F8-4AE7-A27B-706C42855DFB}|prog201_cardgames.csproj|solutionrelative:card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70526581-23F8-4AE7-A27B-706C42855DFB}|prog201_cardgames.csproj|c:\\users\\olive\\documents\\columbia\\prog201\\prog201_cardgames\\deck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70526581-23F8-4AE7-A27B-706C42855DFB}|prog201_cardgames.csproj|solutionrelative:deck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70526581-23F8-4AE7-A27B-706C42855DFB}|prog201_cardgames.csproj|C:\\Users\\olive\\Documents\\Columbia\\Prog201\\prog201_cardgames\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70526581-23F8-4AE7-A27B-706C42855DFB}|prog201_cardgames.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70526581-23F8-4AE7-A27B-706C42855DFB}|prog201_cardgames.csproj|C:\\Users\\olive\\Documents\\Columbia\\Prog201\\prog201_cardgames\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70526581-23F8-4AE7-A27B-706C42855DFB}|prog201_cardgames.csproj|solutionrelative:game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\olive\\Documents\\Columbia\\Prog201\\prog201_cardgames\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\olive\\Documents\\Columbia\\Prog201\\prog201_cardgames\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-25T23:07:41.091Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Game.cs",
+              "DocumentMoniker": "C:\\Users\\olive\\Documents\\Columbia\\Prog201\\prog201_cardgames\\Game.cs",
+              "RelativeDocumentMoniker": "Game.cs",
+              "ToolTip": "C:\\Users\\olive\\Documents\\Columbia\\Prog201\\prog201_cardgames\\Game.cs",
+              "RelativeToolTip": "Game.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAAASwKEAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-25T23:08:28.835Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Deck.cs",
+              "DocumentMoniker": "C:\\Users\\olive\\Documents\\Columbia\\Prog201\\prog201_cardgames\\Deck.cs",
+              "RelativeDocumentMoniker": "Deck.cs",
+              "ToolTip": "C:\\Users\\olive\\Documents\\Columbia\\Prog201\\prog201_cardgames\\Deck.cs",
+              "RelativeToolTip": "Deck.cs",
+              "ViewState": "AQIAAGsAAAAAAAAAAAAIwBQAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-25T23:08:10.299Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Card.cs",
+              "DocumentMoniker": "C:\\Users\\olive\\Documents\\Columbia\\Prog201\\prog201_cardgames\\Card.cs",
+              "RelativeDocumentMoniker": "Card.cs",
+              "ToolTip": "C:\\Users\\olive\\Documents\\Columbia\\Prog201\\prog201_cardgames\\Card.cs",
+              "RelativeToolTip": "Card.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAzwB4AAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-25T23:07:59.06Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

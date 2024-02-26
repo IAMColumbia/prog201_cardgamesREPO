@@ -1,0 +1,7 @@
+C:\Users\olive\Documents\Columbia\Prog201\prog201_cardgames\obj\Debug\prog201_cardgames.csproj.AssemblyReference.cache
+C:\Users\olive\Documents\Columbia\Prog201\prog201_cardgames\obj\Debug\prog201_cardgames.csproj.CoreCompileInputs.cache
+C:\Users\olive\Documents\Columbia\Prog201\prog201_cardgames\bin\Debug\prog201_cardgames.exe.config
+C:\Users\olive\Documents\Columbia\Prog201\prog201_cardgames\bin\Debug\prog201_cardgames.exe
+C:\Users\olive\Documents\Columbia\Prog201\prog201_cardgames\bin\Debug\prog201_cardgames.pdb
+C:\Users\olive\Documents\Columbia\Prog201\prog201_cardgames\obj\Debug\prog201_cardgames.exe
+C:\Users\olive\Documents\Columbia\Prog201\prog201_cardgames\obj\Debug\prog201_cardgames.pdb
