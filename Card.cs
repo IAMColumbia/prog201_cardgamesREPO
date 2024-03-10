@@ -6,18 +6,28 @@ using System.Threading.Tasks;
 
 namespace prog201_cardgames
 {
+
+    public enum Suit
+    {
+        Fey,
+        Fiend,
+        Beast,
+        Celestial
+    }
+
     public class Card
     {
-        public string Name { get; }
-        public string Art { get; }
-        public string Suit { get; set; }
+        public string Name { get; set; }
+        public string Art { get; set; }
+        public Suit Suit { get; set; }
         public int Value { get; set; }
 
-        public Card(string name, string art)
+        public Card(string name, string art, Suit suit)
         {
             Name = name;
             Art = art;
-            Suit = name.Split(' ')[2];
+            Suit = suit;
+            //Suit = name.Split(' ')[2];
             Value = GetValue();
         }
 

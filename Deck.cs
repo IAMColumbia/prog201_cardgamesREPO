@@ -21,11 +21,11 @@ namespace prog201_cardgames
             drawnCards = new List<Card>();
             random = new Random();
 
-            InitializeDeck();
-            InitializeHalfDeck(suit1, suit2);
+            //InitializeDeck();
+            //InitializeHalfDeck(suit1, suit2);
         }
 
-        private void InitializeDeck()
+        public void InitializeDeck()
         {
             cards = new List<Card>();
             drawnCards = new List<Card>();
@@ -38,21 +38,21 @@ namespace prog201_cardgames
             {
                 foreach (string value in values)
                 {
-                    string name = $"{value} of {suit}";
+                    string name = $"{value} of {suit}\n";
                     string art = GetCardArt(value, suit, "");
-                    cards.Add(new Card(name, art));
+                    cards.Add(new Card(name, art, (Suit)Enum.Parse(typeof(Suit), suit)));
                 }
 
                 foreach (string face in faces)
                 {
-                    string faceName = $"{face} of {suit}";
+                    string faceName = $"{face} of {suit} \n";
                     string faceArt = GetCardArt("", suit, face);
-                    cards.Add(new Card(faceName, faceArt));
+                    cards.Add(new Card(faceName, faceArt, (Suit)Enum.Parse(typeof(Suit), suit)));
                 }
             }
         }
 
-        private void InitializeHalfDeck(string suit1, string suit2)
+        public void InitializeHalfDeck(string suit1, string suit2)
         {
             cards.Clear();
             drawnCards.Clear();
@@ -66,16 +66,16 @@ namespace prog201_cardgames
             {
                 foreach (string value in values)
                 {
-                    string name = $"{value} of {suit}";
+                    string name = $"{value} of {suit}\n";
                     string art = GetCardArt(value, suit, "");
-                    cards.Add(new Card(name, art));
+                    cards.Add(new Card(name, art, (Suit)Enum.Parse(typeof(Suit), suit)));
                 }
 
                 foreach (string face in faces)
                 {
-                    string faceName = $"{face} of {suit}";
+                    string faceName = $"{face} of {suit}\n";
                     string faceArt = GetCardArt("", suit, face);
-                    cards.Add(new Card(faceName, faceArt));
+                    cards.Add(new Card(faceName, faceArt, (Suit)Enum.Parse(typeof(Suit), suit)));
                 }
             }
         }
@@ -87,12 +87,12 @@ namespace prog201_cardgames
             //ASCII art for the card value
             if (value.Length == 2)
             {
-                cardArt += " _________\n";
+                cardArt += "_________\n";
                 cardArt += $"| {value}      |\n";
             }
             else
             {
-                cardArt += " _________\n";
+                cardArt += "_________\n";
             }
 
             //ASCII art for the face card
@@ -146,7 +146,6 @@ namespace prog201_cardgames
 
             return cardArt;
         }
-
 
         public void Shuffle()
         {
