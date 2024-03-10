@@ -21,6 +21,10 @@ namespace prog201_cardgames
             drawnCards = new List<Card>();
             random = new Random();
 
+            //card art was not displaying correctly due to deck initialization in the constructor
+            //because of the use of both a full deck and a half deck, program would skip lines of the ASCII art
+            //tutor session with Mack Pearson-Muggli helped resolve this issue, and card art now displays correctly
+            //kept for reference
             //InitializeDeck();
             //InitializeHalfDeck(suit1, suit2);
         }
@@ -112,7 +116,6 @@ namespace prog201_cardgames
                 cardArt += faceArt;
             }
 
-
             //ASCII art for the suit symbol
             switch (suit)
             {
@@ -147,6 +150,7 @@ namespace prog201_cardgames
             return cardArt;
         }
 
+        //Fisher-Yates Shuffle from Prog201 class demo
         public void Shuffle()
         {
             int n = cards.Count;

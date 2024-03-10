@@ -18,6 +18,7 @@ namespace prog201_cardgames
 
         public Game(string suit1, string suit2)
         {
+            //moved creation of decks to each game method with help from tutor Mack Pearson-Muggli
             //deck = new Deck(suit1, suit2);
             playerHand = new List<Card>();
             computerHand = new List<Card>();
@@ -77,6 +78,7 @@ namespace prog201_cardgames
         public void ShowFullDeck()
         {
             Console.Clear();
+            //deck instance is created here >> tutor Mack Pearson-Muggli
             Deck deck;
             deck = new Deck("", "");
             deck.InitializeDeck();
@@ -114,6 +116,7 @@ namespace prog201_cardgames
         private void DrawCard()
         {
             Console.Clear();
+            //deck instance is created here >> tutor Mack Pearson-Muggli
             Deck deck;
             deck = new Deck("", "");
             deck.InitializeDeck();
@@ -269,6 +272,7 @@ namespace prog201_cardgames
         public void PlayHighLow()
         {
             Console.Clear();
+            //deck instance is created here >> tutor Mack Pearson-Muggli
             Deck deck;
             deck = new Deck("", "");
             deck.InitializeDeck();
@@ -304,8 +308,8 @@ namespace prog201_cardgames
                 Console.WriteLine(computerCard.Art);
 
                 //debugging comparison
-                int comparison = CompareCards(playerCard, computerCard);
-                Console.WriteLine($"Comparison result: {comparison}");
+                //int comparison = CompareCards(playerCard, computerCard);
+                //Console.WriteLine($"Comparison result: {comparison}");
 
                 if (guess == 1)
                     if (playerCard.Value < computerCard.Value)
@@ -319,7 +323,7 @@ namespace prog201_cardgames
                         Console.WriteLine("Sorry, you lose!");
                 else
                     Console.WriteLine("\nEnter [1] for HIGHER" +
-                        "\nEnter [2] for LOWEER");
+                        "\nEnter [2] for LOWER");
 
                 Console.WriteLine("\nDo you want to play again?" +
                     "\n[1] YES" +
@@ -344,6 +348,7 @@ namespace prog201_cardgames
 
         public void PlaySameOrDifferent()
         {
+            //deck instance is created here >> tutor Mack Pearson-Muggli
             Deck halfDeck;
 
             Console.Clear();
@@ -453,6 +458,7 @@ namespace prog201_cardgames
             Console.ReadKey();
             Console.Clear();
 
+            //deck instance is created here >> tutor Mack Pearson-Muggli
             Deck matchDeck = new Deck("", "");
             matchDeck.InitializeDeck();
             matchDeck.Shuffle();
@@ -852,6 +858,8 @@ namespace prog201_cardgames
 
 
         //old method for determining the winner
+        //changed due to addition of new Suit enum and refactoring of the game logic
+        //kept for reference
 
         //private void DetermineWinner(List<Card> playerHand, List<Card> computerHand)
         //{

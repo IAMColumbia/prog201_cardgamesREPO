@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace prog201_cardgames
 {
-
+    //i know how to use enums now, yippee :)
     public enum Suit
     {
         Fey,
@@ -27,6 +27,7 @@ namespace prog201_cardgames
             Name = name;
             Art = art;
             Suit = suit;
+            //old way of splicing the card name to get the suit
             //Suit = name.Split(' ')[2];
             Value = GetValue();
         }
